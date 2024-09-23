@@ -1,4 +1,4 @@
-🚆 # PyTrain-Management
+🚆 PyTrain-Management
 🚀 Project Overview
 Welcome to the Train Management System — your one-stop solution for managing train bookings! This Python-based project, crafted using Object-Oriented Programming (OOP), streamlines the entire train journey process, from scheduling trains to issuing detailed passenger receipts. Whether you're booking a short trip or a long journey, this system has you covered with all the necessary features.
 
