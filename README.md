@@ -17,5 +17,5 @@ Welcome to **PyTrain-Management** — your one-stop solution for managing train 
 - **Object-Oriented Programming (OOP)**: Provides a flexible and well-structured design, making the system easier to maintain and extend.
 
 ## 💻 How It Works
-## Before Running the program, file directory must be created of FileRoute1, FileRoute2, FileRoute3
+Before Running the program, file directory must be created of FileRoute1, FileRoute2, FileRoute3 in the folder for the file handling purpose.
 The Train Management System operates through a simple command-line interface. Users can book tickets, view available trains, and receive detailed receipts. Behind the scenes, OOP principles are utilized for efficient data management and organization, ensuring a smooth and seamless user experience.
