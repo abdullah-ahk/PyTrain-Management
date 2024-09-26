@@ -37,7 +37,7 @@ class Train:
 
 
 def read_remaining_seats(route_name, default_seats):
-    """Reads the remaining seats from file, if it exists."""
+    # Reads the remaining seats from file, if it exists.
     file_path = f"File{route_name}/Remaining_seats.txt"
     if os.path.exists(file_path):# it checks if the file_path exist in the directory or not 
         with open(file_path, "r") as f_seats:
