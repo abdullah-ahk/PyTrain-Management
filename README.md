@@ -15,7 +15,8 @@ Welcome to **PyTrain-Management** — your one-stop solution for managing train 
 
 - **Python**: The main programming language used for the project.
 - **Object-Oriented Programming (OOP)**: Provides a flexible and well-structured design, making the system easier to maintain and extend.
+- **sqlite3**: This lightweight SQL database is used to store all crucial information, such as available train routes, passenger details, ticket bookings, and more. It provides efficient data handling with quick lookups, updates, and inserts, ensuring that all passenger and train information is consistently stored and easily retrievable. The integration of sqlite3 also makes the system easily adaptable for future expansions, such as transitioning to a more advanced database if needed.
 
 ## 💻 How It Works
-- **Before Running the program, file directory must be created of FileRoute1, FileRoute2, FileRoute3 in the folder for the file handling purpose.**
+
 - **The Train Management System operates through a simple command-line interface. Users can book tickets, view available trains, and receive detailed receipts. Behind the scenes, OOP principles are utilized for efficient data management and organization, ensuring a smooth and seamless user experience.**
