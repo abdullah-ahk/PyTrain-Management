@@ -12,7 +12,16 @@ class Train:
         self.fare = fare
         self.ticketno = random.randint(100, 900)
         self.balance = balance
-        self.myseats = int(input("Enter number of seats you want to buy for this route: "))
+        while True:
+            try:
+                self.myseats = int(input("Enter the number of seats you want to buy for this route: "))
+                if self.seats - self.myseats >= 0:
+                    break
+                else:
+                    raise ValueError(f"Not enough available seats || Available seats left are: {self.seats} ")
+            except ValueError as e:
+                print(e)
+                print("Please enter a valid number of seats.")
         self.dt = dt.now()
 
     def seats_deduction(self):
@@ -89,12 +98,13 @@ def book_ticket(route_name):
 
     totalmoney = int(input("Enter current bank status: "))
     train_ticket = Train(route_name, available_seats, fare, totalmoney)
-
-    print("\n------------------------ Passenger Receipt -----------------------------")
+    print("\n")
     train_ticket.fare_deduction()
-    print(train_ticket.getinfo())
-    print("------------------------------------------------------------------------\n")
-
+    i=input("Do you want to print Passenger Receipt || press ('y'): ")
+    if(i=='y'):
+        print("\n------------------------ Passenger Receipt -----------------------------")
+        print(train_ticket.getinfo())
+        print("------------------------------------------------------------------------\n")
     available_seats = train_ticket.seats_deduction()
     c.execute("""INSERT INTO passengerinfo (
                  ticket_id, passenger_name, ticket_purchased, route_name, fare_paid, remaining_balance, datetime)
@@ -191,7 +201,6 @@ while(m=='m'):
     print("[q] Quit the system")
     print("-"*60)
     options =input()
-    print("\n\n")
     match options.lower():
 
         case "i":
